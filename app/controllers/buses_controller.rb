@@ -6,7 +6,8 @@ def index
 end
 
 def show
-
+    @bus = Bus.find(params[:id])
+    render json: @bus
 end
 
 def create
